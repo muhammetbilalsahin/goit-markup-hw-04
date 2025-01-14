@@ -51,15 +51,11 @@ body {
   background-color: #ffffff;
 }
 header {
-  width: 1440px;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-header .container {
   width: 1440px;
   height: 72px;
 }
-
 .studio-manu {
   position: relative;
   display: flex;
@@ -67,6 +63,18 @@ header .container {
   bottom: 24px;
   top: 5px;
   left: 345px;
+}
+.header-studio-list-1 {
+  position: relative;
+  display: flex;
+  width: 48px;
+  height: 45px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2e2f42;
 }
 .header-studio-list {
   position: relative;
@@ -78,7 +86,7 @@ header .container {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2e2f42;
 }
-.header-studio-list::after {
+.header-studio-list-1::after {
   content: '';
   width: 100%;
   position: absolute;
@@ -87,6 +95,14 @@ header .container {
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
+  width: 48px;
+  height: 4px;
+}
+.header-studio-list-1:hover {
+  color: #404bbf;
+}
+.header-studio-list-1:focus {
+  color: #404bbf;
 }
 .header-studio-list:hover {
   color: #404bbf;
@@ -105,6 +121,7 @@ header .container {
 .address-list {
   display: flex;
   gap: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-list-tel {
   position: absolute;
