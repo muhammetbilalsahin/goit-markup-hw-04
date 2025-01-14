@@ -64,7 +64,7 @@ header {
   top: 5px;
   left: 345px;
 }
-.header-studio-list-1 {
+.header-studio-list-line {
   position: relative;
   display: flex;
   width: 48px;
@@ -73,8 +73,8 @@ header {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #2e2f42;
 }
 .header-studio-list {
   position: relative;
@@ -86,7 +86,7 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2e2f42;
 }
-.header-studio-list-1::after {
+.header-studio-list-line::after {
   content: '';
   width: 100%;
   position: absolute;
@@ -109,6 +109,9 @@ header {
 }
 .header-studio-list:focus {
   color: #404bbf;
+}
+header address ul li a {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-logo {
   position: relative;
@@ -156,10 +159,6 @@ header {
 }
 
 .section-big-tittle {
-  padding: 188px 0;
-  width: 1440px;
-  height: 600px;
-  background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -169,6 +168,10 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 188px 0;
+  width: 1440px;
+  height: 600px;
+  background-color: #2e2f42;
 }
 
 .big-tittle {
@@ -183,6 +186,9 @@ header {
   line-height: 1.07;
 
   left: 472px;
+}
+button {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tittle-button {
   position: relative;
@@ -232,7 +238,8 @@ header {
 
   bottom: 120px;
 }
-.icon-svg {
+.icons-svgs {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,6 +299,8 @@ header {
 .section-our-team-ul {
   display: flex;
   position: relative;
+  justify-content: center;
+  gap: 24px;
   left: 156px;
   gap: 24px;
 }
@@ -322,6 +331,7 @@ header {
   bottom: 16px;
   width: 232px;
   height: 104px;
+  padding: 32px 0;
 }
 .social-media {
   position: relative;
@@ -334,18 +344,10 @@ header {
   justify-content: center;
 }
 .media {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 8px;
   width: 40px;
   height: 40px;
 }
 .media-name {
-  position: relative;
-  display: flex;
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
@@ -353,6 +355,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .media-name:hover {
   background-color: #404bbf;
@@ -360,7 +363,7 @@ header {
 .media-name:focus {
   background-color: #404bbf;
 }
-.icon-instagram {
+.icon-fill {
   fill: #f4f4fd;
 }
 .name-our-team {
@@ -429,9 +432,15 @@ header {
 .our-portfolio-listt {
   position: relative;
   width: 360px;
-  height: 380px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 420px;
   flex-basis: calc((100% - 3 * 24px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.our-portfolio-listt:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .small-tittle {
   position: relative;
@@ -460,11 +469,6 @@ header {
 }
 
 .img-backgroung {
-  position: absolute;
-  display: block;
-  width: 360px;
-  height: 300px;
-  background: #4d5ae5;
   position: relative;
   overflow: hidden;
 }
@@ -516,8 +520,6 @@ header {
 }
 .media-ul {
   display: flex;
-  width: 208px;
-  height: 40px;
   gap: 16px;
 }
 .footer-list {
@@ -525,7 +527,6 @@ header {
   height: 40px;
 }
 .footer-media {
-  position: relative;
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
@@ -563,12 +564,13 @@ header {
   color: #f4f4fd;
 }
 .paragraph-web-studio {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
   position: relative;
-  max-width: 264px;
   width: 264px;
   height: 112px;
-  line-height: 1.5;
-  color: #f4f4fd;
-  letter-spacing: 0.02em;
   left: 156px;
 }
