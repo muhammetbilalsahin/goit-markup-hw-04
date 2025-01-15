@@ -91,10 +91,10 @@ header {
   width: 100%;
   position: absolute;
   left: 0;
-  bottom: 1px;
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
+  bottom: -1px;
   width: 48px;
   height: 4px;
 }
@@ -127,20 +127,10 @@ header address ul li a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-list-tel {
-  position: absolute;
-  right: 347px;
-  top: 24px;
-  gap: 40px;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.address-list-info {
-  position: absolute;
-  right: 156px;
-  top: 24px;
+  position: relative;
+  display: flex;
+  left: 940px;
+  bottom: 40px;
   gap: 40px;
   font-size: 16px;
   line-height: 1.5;
@@ -149,11 +139,9 @@ header address ul li a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-list-info:hover,
 .address-list-tel:hover {
   color: #404bbf;
 }
-.address-list-info:hover,
 .address-list-tel:focus {
   color: #404bbf;
 }
@@ -534,6 +522,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-media:hover {
   background-color: #31d0aa;
